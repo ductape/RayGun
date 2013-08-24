@@ -1,4 +1,5 @@
-.d
-.o
-.elf
-.hex
+# ignore compiled files. 
+*.d
+*.o
+*.elf
+*.hex
