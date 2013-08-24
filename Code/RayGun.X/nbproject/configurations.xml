@@ -22,6 +22,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="Source" displayName="Source" projectFiles="true">
+        <logicalFolder name="Micro" displayName="Micro" projectFiles="true">
+          <itemPath>Source/Micro/Gpio.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>configuration_bits.c</itemPath>
       <itemPath>interrupts.c</itemPath>
       <itemPath>main.c</itemPath>
@@ -38,6 +43,9 @@
     <itemPath>legal_disclaimer.txt</itemPath>
     <itemPath>project_information.txt</itemPath>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>Source</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="XC16_24FJ256GA110" type="2">
@@ -996,7 +1004,7 @@
     <conf name="XC16_24F32KA302" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC24F32KA302</targetDevice>
+        <targetDevice>PIC24F32KA301</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>

@@ -68,8 +68,8 @@ FIXDEPS=fixDeps
 .build-conf:  ${BUILD_SUBPROJECTS}
 	${MAKE}  -f nbproject/Makefile-XC16_24F32KA302.mk dist/${CND_CONF}/${IMAGE_TYPE}/RayGun.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_PROCESSOR_OPTION=24F32KA302
-MP_LINKER_FILE_OPTION=,--script=p24F32KA302.gld
+MP_PROCESSOR_OPTION=24F32KA301
+MP_LINKER_FILE_OPTION=,--script=p24F32KA301.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
