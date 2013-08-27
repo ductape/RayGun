@@ -12,6 +12,8 @@
 extern "C" {
 #endif
 
+#include <stdbool.h>
+
 /***************************** PUBLIC DEFINITIONS *****************************/
 
 typedef enum GpioDirection
@@ -23,12 +25,16 @@ typedef enum GpioDirection
 
 /******************************* PUBLIC MACROS ********************************/
 
+#define GPIO_SET(port, pin)    port.pin = true
+#define GPIO_CLEAR(port, pin)  port.pin = false
+
+
 /****************************** PUBLIC FUNCTIONS ******************************/
 
 /**
  *  Configures the GPIO with the given settings 
  */
-void Gpio_Configure();
+void Gpio_Configure(void);
 
 #ifdef	__cplusplus
 }

@@ -25,6 +25,11 @@
       <logicalFolder name="Source" displayName="Source" projectFiles="true">
         <logicalFolder name="Micro" displayName="Micro" projectFiles="true">
           <itemPath>Source/Micro/Gpio.h</itemPath>
+          <itemPath>Source/Micro/Pwm.h</itemPath>
+          <itemPath>Source/Micro/Pwm.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Platform" displayName="Platform" projectFiles="true">
+          <itemPath>Source/Platform/Board.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>configuration_bits.c</itemPath>
@@ -1004,7 +1009,7 @@
     <conf name="XC16_24F32KA302" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC24F32KA301</targetDevice>
+        <targetDevice>PIC24F32KA302</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
@@ -1134,7 +1139,7 @@
       </C30Global>
       <PICkit3PlatformTool>
         <property key="ADC 1" value="true"/>
-        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="AutoSelectMemRanges" value="manual"/>
         <property key="CLOCK CONTROL LVDCON" value="true"/>
         <property key="CLOCK CONTROL REFOCON" value="true"/>
         <property key="COMPARATOR" value="true"/>
