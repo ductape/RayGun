@@ -46,55 +46,54 @@ int16_t main(void)
 
     /* TODO <INSERT USER APPLICATION CODE HERE> */
 
-    TRISB = 0x00; /* set all of port A as outputs */
-    TRISAbits.TRISA6 = false;
-    _LATB7 = true; /* turn on RB7 */
+    TRISB = 0x00; /* set all of port B as outputs */
+    TRISAbits.TRISA6 = false;   /* set the PWM as low output */
+
 
     Pwm_Init(); 
 
     while(1)
     {
-        _LATB6 ^= true;     /* toggle B6 */
         switch(iteration++)
         {
             case 0:
                 Pwm_SetFrequency(1046); /* C6 */
-                //GPIO_SET(LED_0_PORT,LED_0_PIN);
-                GPIO_CLEAR1(LED_0);
+                GPIO_SET(LED_0);
                 break;
 
             case 1:
                 Pwm_SetFrequency(1175);  /* D6 */
-//                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
-                GPIO_SET1(LED_0);
+                GPIO_SET(LED_1);
                 break;
 
             case 2:
                 Pwm_SetFrequency(1319); /* E6 */
-//                GPIO_SET(LED_0_PORT,LED_0_PIN);
-                GPIO_CLEAR1(LED_0);
+                GPIO_SET(LED_2);
                 break;
 
             case 3:
                 Pwm_SetFrequency(1397); /* F6 */
-//                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
-                GPIO_SET1(LED_0);
+                GPIO_SET(LED_3);
                 break;
 
             case 4:
                 Pwm_SetFrequency(1568); /* G6 */
+                GPIO_SET(LED_4);
                 break;
 
             case 5:
                 Pwm_SetFrequency(1760); /* A6 */
+                GPIO_SET(LED_5);
                 break;
 
             case 6:
                 Pwm_SetFrequency(1976); /* B6 */
+                GPIO_SET(LED_6);
                 break;
 
             case 7:
                 Pwm_SetFrequency(2093); /* C7 */
+                GPIO_SET(LED_7);
                 break;
 
             default:

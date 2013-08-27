@@ -25,11 +25,8 @@ typedef enum GpioDirection
 
 /******************************* PUBLIC MACROS ********************************/
 
-#define GPIO_SET(port, pin)    port.pin = true
-#define GPIO_CLEAR(port, pin)  port.pin = false
-
-#define GPIO_SET1(portpin)      portpin = true;
-#define GPIO_CLEAR1(portpin)    portpin = false; 
+#define GPIO_SET(portpin)      portpin = true;
+#define GPIO_CLEAR(portpin)    portpin = false; 
 
 /****************************** PUBLIC FUNCTIONS ******************************/
 
