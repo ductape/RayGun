@@ -59,22 +59,26 @@ int16_t main(void)
         {
             case 0:
                 Pwm_SetFrequency(1046); /* C6 */
-                GPIO_SET(LED_0_PORT,LED_0_PIN);
+                //GPIO_SET(LED_0_PORT,LED_0_PIN);
+                GPIO_CLEAR1(LED_0);
                 break;
 
             case 1:
                 Pwm_SetFrequency(1175);  /* D6 */
-                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
+//                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
+                GPIO_SET1(LED_0);
                 break;
 
             case 2:
                 Pwm_SetFrequency(1319); /* E6 */
-                GPIO_SET(LED_0_PORT,LED_0_PIN);
+//                GPIO_SET(LED_0_PORT,LED_0_PIN);
+                GPIO_CLEAR1(LED_0);
                 break;
 
             case 3:
                 Pwm_SetFrequency(1397); /* F6 */
-                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
+//                GPIO_CLEAR(LED_0_PORT,LED_0_PIN);
+                GPIO_SET1(LED_0);
                 break;
 
             case 4:

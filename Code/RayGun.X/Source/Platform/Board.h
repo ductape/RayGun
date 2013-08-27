@@ -17,6 +17,8 @@ extern "C" {
 /** GPIO Declarations */
 #define LED_0_PORT  LATBbits
 #define LED_0_PIN   LATB7
+#define LED_0       _LATB7
+
 
 /******************************* PUBLIC MACROS ********************************/
 
