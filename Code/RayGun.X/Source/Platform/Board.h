@@ -17,7 +17,7 @@ extern "C" {
 /** GPIO Declarations */
 #define LED_0       _LATB2
 #define LED_1       _LATB3
-#define LED_2       _LATB4
+#define LED_2       _LATB10
 #define LED_3       _LATB5
 #define LED_4       _LATB6
 #define LED_5       _LATB7

@@ -229,8 +229,6 @@
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
       </PICkit3PlatformTool>
-      <Simulator>
-      </Simulator>
     </conf>
     <conf name="C30_24FJ256GA110" type="2">
       <toolsSet>
