@@ -15,14 +15,14 @@ extern "C" {
 /***************************** PUBLIC DEFINITIONS *****************************/
 
 /** GPIO Declarations */
-#define LED_0       _LATB2
-#define LED_1       _LATB3
-#define LED_2       _LATB10
-#define LED_3       _LATB5
-#define LED_4       _LATB6
-#define LED_5       _LATB7
-#define LED_6       _LATB8
-#define LED_7       _LATB9
+#define LED_0       _LATB13
+#define LED_1       _LATB12
+#define LED_2       _LATB11
+#define LED_3       _LATB10
+#define LED_4       _LATB9
+#define LED_5       _LATB8
+#define LED_6       _LATB7
+#define LED_7       _LATB6
     
 
 
